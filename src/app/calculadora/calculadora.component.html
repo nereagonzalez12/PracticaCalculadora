@@ -1,0 +1,17 @@
+<div class="container">
+    <h1>Mini Calculadora</h1>
+
+    <form class="text-end">
+        <p>Número 1: <input type="number" placeholder="0" name="num1" [(ngModel)]="num1">
+        </p>
+        <p>Número 2: <input type="number" placeholder="0" name="num2" [(ngModel)]="num2"></p>
+        <button type="submit" class="btn btn-warning" name="sumar" (click)="sumar()">Sumar</button>
+        <button type="submit" class="btn btn-primary" name="restar" (click)="restar()">Restar</button>
+    </form>
+
+    <div>
+        <p>
+            Resultado: {{result}}
+        </p>
+    </div>
+</div>
